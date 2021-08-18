@@ -1,0 +1,66 @@
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: rgb(124, 12, 87);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: rgb(124, 12, 87);
+}
+.hour-marks {
+    fill: none;
+    stroke: rgb(124, 12, 87);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: rgb(124, 12, 87);
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: rgb(124, 12, 87);
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: rgb(124, 12, 87);
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Caixa transparente que certifica-se que os ponteiros estão corretamente centralizados*/
+.sizing-box {
+    fill: none;
+}
+
+/* Faz com que os ponteiros caminhem ao redor do mesmo ponto central */
+/* Opcional: Use transition para criar animação */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    /*transition: transform .5s ease-in-out;*/
+}
